@@ -32,22 +32,12 @@ var ground = Bodies.rectangle(450, 480, 900, 40, {
 });
 
 // Criando objetos do jogo usando nossas classes
-var bird = new Bird(150, 350);
-var pig = new Pig(700, 350);
-
-var box1 = new Box(650, 430, 50, 80);
-var box2 = new Box(750, 430, 50, 80);
-var box3 = new Box(700, 370, 160, 30);
 
 // Colocando o chão no mundo
 Composite.add(world, ground);
 
 // Colocando os objetos no mundo
-bird.addToWorld(world);
-pig.addToWorld(world);
-box1.addToWorld(world);
-box2.addToWorld(world);
-box3.addToWorld(world);
+
 
 // Rodando a tela
 Render.run(render);
